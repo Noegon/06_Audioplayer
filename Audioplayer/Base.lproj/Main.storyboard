@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,7 +54,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgW-aW-TNk">
-                                                        <rect key="frame" x="37.5" y="41.5" width="300" height="30"/>
+                                                        <rect key="frame" x="37.5" y="40.5" width="300" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="7Mr-cz-AJC"/>
                                                             <constraint firstAttribute="width" constant="300" id="pBB-SF-iqi"/>
@@ -122,14 +122,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkO-W2-cE9">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="111"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGH-r3-nlh">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGH-r3-nlh">
                                                                 <rect key="frame" x="37" y="30" width="50" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="RO4-eI-LrC"/>
                                                                     <constraint firstAttribute="width" constant="50" id="pXk-lO-QPw"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <state key="normal" title="Prev"/>
+                                                                <state key="normal" image="previous"/>
                                                                 <connections>
                                                                     <action selector="previousSongButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="VId-NE-03R"/>
                                                                 </connections>
@@ -143,15 +142,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2r7-y3-FFH">
                                                         <rect key="frame" x="125" y="0.0" width="125" height="111"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8K-ne-9hI">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8K-ne-9hI">
                                                                 <rect key="frame" x="37" y="30" width="50" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="7Xu-MP-jbQ"/>
                                                                     <constraint firstAttribute="width" constant="50" id="HP5-tZ-5eT"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                                                <state key="normal" title="Play"/>
-                                                                <state key="selected" title="Pause"/>
+                                                                <state key="normal" image="play"/>
+                                                                <state key="selected" image="pause"/>
                                                                 <connections>
                                                                     <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VwZ-Fn-t84"/>
                                                                 </connections>
@@ -165,14 +163,13 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-se-7YG">
                                                         <rect key="frame" x="250" y="0.0" width="125" height="111"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnr-ST-ty9">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnr-ST-ty9">
                                                                 <rect key="frame" x="38" y="30" width="50" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="PgJ-I3-9SM"/>
                                                                     <constraint firstAttribute="width" constant="50" id="ogt-sV-hmb"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <state key="normal" title="Next"/>
+                                                                <state key="normal" image="next"/>
                                                                 <connections>
                                                                     <action selector="nextSongButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBa-Qt-BJ2"/>
                                                                 </connections>
@@ -222,4 +219,10 @@
             <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="next" width="32" height="32"/>
+        <image name="pause" width="32" height="32"/>
+        <image name="play" width="32" height="32"/>
+        <image name="previous" width="32" height="32"/>
+    </resources>
 </document>

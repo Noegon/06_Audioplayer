@@ -49,9 +49,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.songList = @[[NGNSong songWithFileName:@"Midnight_Express" songName:@"Midnight express" extension:@"mp3" author:@"Extreme" imageURL:@""],
-                      [NGNSong songWithFileName:@"Polet_valkirii" songName:@"Valkiria's flight" extension:@"mp3" author:@"R. Wagner" imageURL:@""],
-                      [NGNSong songWithFileName:@"Shestvie_bogov" songName:@"Gods march into Valhalla" extension:@"mp3" author:@"R. Wagner" imageURL:@""]
+    self.songList = @[[NGNSong songWithFileName:@"Midnight_Express" songName:@"Midnight express" extension:@"mp3" author:@"Extreme" imageURL:@"https://a3-images.myspacecdn.com/images04/8/92965445adf04ee099211aea557fd9fd/300x300.jpg"],
+                      [NGNSong songWithFileName:@"Polet_valkirii" songName:@"Ride of the Valkyries" extension:@"mp3" author:@"R. Wagner" imageURL:@"https://images-na.ssl-images-amazon.com/images/I/41J8T16MNXL.jpg"],
+                      [NGNSong songWithFileName:@"Shestvie_bogov" songName:@"Gods march into Valhalla" extension:@"mp3" author:@"R. Wagner" imageURL:@"https://lastfm-img2.akamaized.net/i/u/300x300/47623965062f4d26b91eeeb4aef03029.jpg"]
                       ];
     self.player = nil;
     self.currentSongIndex = 0;
@@ -186,6 +186,24 @@
         [self.player play];
         [self startTimer];
     }
+    [self loadAlbumImageWithURL:song.imageURL];
+}
+
+- (void)loadAlbumImageWithURL:(NSString *)imageURL {
+    NSURL *url = [NSURL URLWithString:imageURL];
+    NSURLSessionTask *task =
+        [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:
+         ^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+             if (data) {
+                 UIImage *image = [UIImage imageWithData:data];
+                 if (image) {
+                     dispatch_async(dispatch_get_main_queue(), ^{
+                         self.albumCoverImageView.image = [UIImage imageWithData:data];
+                     });
+                 }
+             }
+    }];
+    [task resume];
 }
 
 @end
