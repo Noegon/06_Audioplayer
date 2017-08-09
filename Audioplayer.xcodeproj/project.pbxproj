@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25651C231F3B11E500A06B60 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25651C221F3B11E500A06B60 /* AVFoundation.framework */; };
+		25651C251F3B1AA000A06B60 /* Midnight_Express.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25651C241F3B1AA000A06B60 /* Midnight_Express.mp3 */; };
+		25651C281F3B3E7F00A06B60 /* Polet_valkirii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25651C261F3B3E7F00A06B60 /* Polet_valkirii.mp3 */; };
+		25651C291F3B3E7F00A06B60 /* Shestvie_bogov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25651C271F3B3E7F00A06B60 /* Shestvie_bogov.mp3 */; };
+		25651C2C1F3B505400A06B60 /* NGNSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 25651C2B1F3B505400A06B60 /* NGNSong.m */; };
 		40ECAE681F3A711C00C0CA63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ECAE671F3A711C00C0CA63 /* main.m */; };
 		40ECAE6B1F3A711C00C0CA63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ECAE6A1F3A711C00C0CA63 /* AppDelegate.m */; };
 		40ECAE6E1F3A711C00C0CA63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ECAE6D1F3A711C00C0CA63 /* ViewController.m */; };
 		40ECAE711F3A711C00C0CA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40ECAE6F1F3A711C00C0CA63 /* Main.storyboard */; };
 		40ECAE761F3A711C00C0CA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ECAE751F3A711C00C0CA63 /* Assets.xcassets */; };
 		40ECAE791F3A711C00C0CA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40ECAE771F3A711C00C0CA63 /* LaunchScreen.storyboard */; };
-		40ECAE821F3A717200C0CA63 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ECAE811F3A717200C0CA63 /* CoreAudio.framework */; };
-		40ECAE841F3A71D800C0CA63 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ECAE831F3A71D800C0CA63 /* CoreAudioKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25651C221F3B11E500A06B60 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		25651C241F3B1AA000A06B60 /* Midnight_Express.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Midnight_Express.mp3; sourceTree = "<group>"; };
+		25651C261F3B3E7F00A06B60 /* Polet_valkirii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Polet_valkirii.mp3; sourceTree = "<group>"; };
+		25651C271F3B3E7F00A06B60 /* Shestvie_bogov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shestvie_bogov.mp3; sourceTree = "<group>"; };
+		25651C2A1F3B505400A06B60 /* NGNSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGNSong.h; sourceTree = "<group>"; };
+		25651C2B1F3B505400A06B60 /* NGNSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGNSong.m; sourceTree = "<group>"; };
 		40ECAE631F3A711C00C0CA63 /* Audioplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audioplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40ECAE671F3A711C00C0CA63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40ECAE691F3A711C00C0CA63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,8 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40ECAE841F3A71D800C0CA63 /* CoreAudioKit.framework in Frameworks */,
-				40ECAE821F3A717200C0CA63 /* CoreAudio.framework in Frameworks */,
+				25651C231F3B11E500A06B60 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +73,8 @@
 		40ECAE651F3A711C00C0CA63 /* Audioplayer */ = {
 			isa = PBXGroup;
 			children = (
+				25651C2A1F3B505400A06B60 /* NGNSong.h */,
+				25651C2B1F3B505400A06B60 /* NGNSong.m */,
 				40ECAE691F3A711C00C0CA63 /* AppDelegate.h */,
 				40ECAE6A1F3A711C00C0CA63 /* AppDelegate.m */,
 				40ECAE6C1F3A711C00C0CA63 /* ViewController.h */,
@@ -77,6 +87,9 @@
 		40ECAE661F3A711C00C0CA63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				25651C261F3B3E7F00A06B60 /* Polet_valkirii.mp3 */,
+				25651C271F3B3E7F00A06B60 /* Shestvie_bogov.mp3 */,
+				25651C241F3B1AA000A06B60 /* Midnight_Express.mp3 */,
 				40ECAE6F1F3A711C00C0CA63 /* Main.storyboard */,
 				40ECAE751F3A711C00C0CA63 /* Assets.xcassets */,
 				40ECAE771F3A711C00C0CA63 /* LaunchScreen.storyboard */,
@@ -89,6 +102,7 @@
 		40ECAE801F3A717200C0CA63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25651C221F3B11E500A06B60 /* AVFoundation.framework */,
 				40ECAE831F3A71D800C0CA63 /* CoreAudioKit.framework */,
 				40ECAE811F3A717200C0CA63 /* CoreAudio.framework */,
 			);
@@ -121,6 +135,7 @@
 		40ECAE5B1F3A711C00C0CA63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NGN;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Alexey Stafeyev";
 				TargetAttributes = {
@@ -154,9 +169,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25651C281F3B3E7F00A06B60 /* Polet_valkirii.mp3 in Resources */,
 				40ECAE791F3A711C00C0CA63 /* LaunchScreen.storyboard in Resources */,
 				40ECAE761F3A711C00C0CA63 /* Assets.xcassets in Resources */,
+				25651C251F3B1AA000A06B60 /* Midnight_Express.mp3 in Resources */,
 				40ECAE711F3A711C00C0CA63 /* Main.storyboard in Resources */,
+				25651C291F3B3E7F00A06B60 /* Shestvie_bogov.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +187,7 @@
 			files = (
 				40ECAE6E1F3A711C00C0CA63 /* ViewController.m in Sources */,
 				40ECAE6B1F3A711C00C0CA63 /* AppDelegate.m in Sources */,
+				25651C2C1F3B505400A06B60 /* NGNSong.m in Sources */,
 				40ECAE681F3A711C00C0CA63 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +349,7 @@
 				40ECAE7F1F3A711C00C0CA63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
